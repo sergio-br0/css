@@ -1,0 +1,223 @@
+/* selector universal, afecta a todo el archivo html */
+* {
+    margin: 5px;
+    padding: 5px;
+}
+
+/* body es todo el cuerpo del html por etiqueta */
+body {
+    font-family: 'Arial', sans-serif; /* Tipo de letra para todo el documento */
+    background-color: gainsboro;/* color de fonto */
+    color: grey; /* Color de texto */
+}
+
+/* Título principal por clase */
+.titulo {
+    font-size: 35px; /* Tamaño */
+    color: green; /* Color verde */
+    text-align: center; /* Centrado horizontal */
+    margin-bottom: 20px; /* Espacio debajo */
+    text-transform: uppercase; /* Poner el texto en mayúsculas */
+}
+
+/* Contenedor principal por id */
+#caja {
+    display: flex;
+    justify-content: center; /* Centra los elementos horizontalmente */
+    width: 80%; /* Ancho del 80% de la pantalla */
+    margin: 0 auto; /* Centrado horizontal */
+    gap: 20px; /* Espacio entre los contenedores */
+}
+
+/* Estilos para cada contenedor */
+.contenedor {
+    background-color: white; /* Fondo blanco */
+    padding: 20px; /* Espaciado interno */
+    border-radius: 8px; /* Bordes redondeados */
+    width: 48%; /* Ancho del 48% de la caja contenedora */
+}
+
+.contenedor2 {
+    background-color: white; /* Fondo blanco */
+    padding: 20px; /* Espaciado interno */
+    border-radius: 8px; /* Bordes redondeados */
+    width: 48%; /* Ancho del 48% de la caja contenedora */
+    /* puede usar % o pixeles(px) u otro tipo de medida segun su necesidad */
+}
+
+.contenedor4 {
+    background-color: white; /* Fondo blanco */
+    padding: 20px; /* Espaciado interno */
+    border-radius: 8px; /* Bordes redondeados */
+    width: 48%; /* Ancho del 48% de la caja contenedora */
+
+}
+
+
+/* Estilo de los subtítulos dentro de los contenedores */
+.subtitulo {
+    color:gray; /* Color gris oscuro */
+    font-size: 25px; /* Tamaño de fuente */
+    margin-bottom: 10px; /* margen debajo del título */
+}
+
+/* Estilo de parrafos por etiqueta*/
+p{
+    font-size: 20px; /* Tamaño de letra estándar */
+    color: gray; /* Gris para el texto */
+    margin-bottom: 15px; /* Espacio debajo del párrafo */
+}
+
+/* resaltar parte de un texto o modificar esa parte */
+span{
+    color: red;
+}
+
+.parrafoCursiva{
+    /* definte el estilo de letra cursiva */
+    font-style: italic;
+}
+/* Usar MedievalSharp como fuente gótica */
+
+.parrafoFuente{
+    /* ejemplo de tipo de fuente especifica */
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+
+/* Botón */
+.boton {
+    background-color: green; /* Color de fondo verde */
+    color: white; /* Texto blanco */
+    padding: 20px; /* Espaciado interno */
+    font-size: 15px; /* Tamaño de fuente */
+    border-radius: 5px; /* Bordes redondeados */
+}
+
+/* Formulario */
+#formulario {
+    background-color: white; /* Fondo blanco */
+    padding: 20px; /* Espaciado interno */
+    border-radius: 8px; /* Bordes redondeados */
+    border-right: unset;
+}
+
+/* Título del formulario */
+.tituloFormulario {
+    font-size: 30px; /* Tamaño de fuente */
+    border-color: black; /*borde del elemento*/
+    color: grey; /* Color del texto */
+    margin-bottom: 20px; /* Espacio debajo del título */
+    text-align: center; /* Centrado del texto */
+}
+
+/* Estilo de los campos de entrada */
+.campos {
+    margin-bottom: 15px; /* Espacio entre los campos */
+}
+
+/* acceder a los elementos hijos dentro del contenedor llamado campos */
+.campos label {
+    font-size: 15px; /* Tamaño de fuente o letra */
+    color: gray; /* Gris oscuro */
+    display: block; /* Hace que el label ocupe toda la línea */
+    margin-bottom: 3px; /* Espacio debajo del label */
+}
+
+/* acceder a los elementos hijos dentro del contenedor llamado campos */
+.campos input {
+    width: 100%; /* Ancho completo */
+    padding: 10px; /* Espaciado interno */
+    border: 3px solidrgb(238, 218, 218)d; /* Borde gris claro */
+    border-radius: 4px; /* Bordes redondeados */
+    font-size: 1rem; /* Tamaño de fuente estándar */
+    box-sizing: border-box; /* Asegura que el padding no afecte el ancho */
+}
+
+
+/* Espaciado entre los botones dentro del formulario */
+.campos button {
+    width: 100%; /* Ancho completo */
+    padding: 10px; /* Espaciado interno */
+    font-size: 18px; /* Tamaño de fuente más grande */
+    background-color:green; /* Color de fondo verde */
+    color: white; /* Texto blanco */
+    border:thick; /* Sin borde */
+    border-radius: 4px; /* Bordes redondeados */
+}
+
+
+
+
+/* TIPOS DE BORDES */
+.borde1 {
+    border-style: dotted; /* Borde punteado */
+}
+.borde2 {
+    border-style: dashed; /* Borde discontinuo */
+}
+.borde3 {
+    border-style: solid; /* Borde sólido */
+    border-color: red; /* color del borde */
+}
+.borde4 {
+    border-style: double; /* Borde doble */
+}
+.borde5 {
+    border-style: none; /* Sin borde */
+}
+.borde6 {
+    border-style: hidden; /* Borde oculto */
+}
+
+
+
+/* TIPOS DE MARGENES */
+
+.cuadro {
+    background-color: #fff;
+    padding: 20px;
+    text-align: center;
+    border: 2px solid grey;
+    border-radius: 10px;
+    
+    /* Márgenes diferentes para cada lado */
+    margin-top: 50px;     /* Margen superior */
+    margin-bottom: 50px;  /* Margen inferior */
+    margin-left: 20px;    /* Margen izquierdo */
+    margin-right: 70px;   /* Margen derecho */
+}
+
+
+
+/* EXPLICACION DE CAJA MODELO*/
+
+.cajaModelo{
+  background-color: rgb(242, 249, 131); /*color formato rgb*/
+  width: 250px; /*altura del elemento html*/
+  border: 20px solid lime; /*borde con color definido*/
+  padding: 25px; /*padding es el espacio entre el contenido y el borde*/
+  margin: 40px; /*margen*/
+}
+
+
+/* TIPOS DE RELLENOS */
+
+.relleno1{
+    background-color: red; /*color de fondo o relleno de la etiqueta*/
+}
+
+.relleno2{
+    width: 300px; /*ancho*/
+    height: 300px; /*altura*/
+    background-repeat: no-repeat; /*para que la imagen no se repita*/
+    /*fonde de etiqueta con imagen tomando la ruta de una imagen en linea*/
+    background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRXhbVNC4Jiy3Nf9nWlBc-NRX9hzLxk4NtAvDmPH93OXhk4qwhb3o6O7QpGsobvyNkgwzc&usqp=CAU);
+}
+
+
+img{
+    background-repeat: no-repeat;
+width: 400px;
+height: 300px;
+}
